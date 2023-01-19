@@ -26,7 +26,7 @@
         <h3>Tags Fundamentais</h3>
 
         <h4>Hierarquia de Títulos</h4>
-        <p>São Tags usadas para a criação de títulos
+        <p>São Tags usadas para a criação de títulos.
             <pre>
                 &lt;h1&gt;Esse é o meu título&lt;/h1&gt;
             </pre>
@@ -34,13 +34,88 @@
         </p>
 
         <h4>Parágrafo</h4>
-        <p>Essa Tag mostra o texto como um parágrafo na página
+        <p>Essa Tag mostra o texto como um parágrafo na página.
             <pre>
                 &lt;p&gt;Esse é um parágrafo&lt;/p&gt;
             </pre>
         </p>
 
         <h4>Divs</h4>
+        <p>Servem para envolver diversos elementos do código e assim podermos aplicar estilos à ele
+        com <span>CSS</span>.<br>
+        As Divs não apresentam nenhuma mudança visual na página.
+            <pre>
+                &lt;div&gt;
+
+                    &lt;h1&gt;Meu Título&lt;/h1&gt;
+                    &lt;p&gt;Meu parágrafo&lt;/p&gt;
+
+                &lt;/div&gt;
+            </pre>
+        </p>
+
+        <h4>Span</h4>
+        <p>É semelhante à div, ele serve para envolver um ou mais elementos sem apresentar mudanças visuais (até usarmos <span>CSS</span>, a principal diferença para a div é que em geral os browsers pulam uma linha para serparar ps elementos de uma div e os demais.
+            <pre>
+                &lt;p&gt;Meu &lt;span&gt;parágrafo&lt;/span&gt; &lt;/p&gt;
+            </pre>
+        </p>
+
+        <h4>Lista não ordenada e ordenada</h4>
+        <p>Usamos &lt;ul&gt; para criar uma lista não ordenada dos elementos.
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Elemento 1&lt;/li&gt;
+                    &lt;li&gt;Elemento 2&lt;/li&gt;
+                &lt;/ul&gt;
+            </pre>
+        </p>
+        <p>E para criar uma lista ordenada usamos &lt;ol&gt;.
+            <pre>
+                &lt;ol&gt;
+                    &lt;li&gt;Elemento 1&lt;/li&gt;
+                    &lt;li&gt;Elemento 2&lt;/li&gt;
+                &lt;ol&gt;
+            </pre>
+
+            <p>Nota: A tag &lt;li&gt; é usada para representar um item na lista</p>
+        </p>
+
+        <h4>Links</h4>
+        <p>As tags podem possuir alguns atributos extras como por exemplo &lt;a href=""&gt; que serve para criarmos um link entre duas página
+            <pre>
+                &lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+            </pre>
+        </p>
+
+        <h4>Imagens</h4>
+        <p>Para inserirmos uma imagem na página usarmos a tag &lt;img src=""&gt;
+            <pre>
+                &lt;img src:"https://example.com/image.png"/&gt;
+            </pre>
+        </p>
+
+        <h3>Anatomia de um documento HTML</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Documento&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                [Conteúdo]
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+
+        <h4>&lt;!DOCTYPE html&gt;</h4>
+        <p>A DOCTYPE precisa ser declarada no inicio de todos as páginas, com ele nós informamos ao browser que o documento é uma página em HTML</p>
+
+        <h4>&lt;html lang="pt-br"</h4>
+        <p>Essa tag engloba todas as outras tags do documento dando unidade a eles.</p>
+        <p>Ela tem que está sempre presente e é conhecida como tag root (raiz) do documento.</p>
+        <p>O atributo <strong>lang</strong> tem como objetivo informar ao browser a linguagem (portguês no caso) que foi utilizado no documento.</p>
     </div>
     
 </body>
