@@ -95,6 +95,40 @@
             </pre>
         </p>
 
+        <h4>Formulário</h4>
+        <p>A tag &lt;form&gt; é especial porque ela nos permite submeter informações para um servidor.</p>
+        <p>Por exemplo, enviar dados pde um formulário para serem salvos em um banco de dados.</p>
+        <p>
+            Exemplo:
+            <pre>
+                &lt;form action="https://google.com/search" method="get"
+                &lt;label for="q"&gt;Sua pesquisa:&lt;/label&gt;
+                &lt;input type="text" name="q" required&gt;
+
+                &lt;input type="submit" value="Buscar!"&gt;
+            </pre>
+        </p>
+
+        <h4>Form</h4>
+        <p>A principal tag de um formulário é o &lt;form&gt; e ela pode ter alguns atributos</p>
+        <p>&lt;action&gt; - Informa qual a URL do servidor onde vamos submeter as informações</p>
+        <p>&lt;method&gt; - Diz qual o método iremos usar.<br>
+            get: geralmenteusado para pegar informações.<br>
+            post: geralmente usado para grava informações no servidor.
+        </p>
+
+        <h4>Input</h4>
+        <p>A tag input é a responsável por mostrar os campos de entrada e dados, essa tag também possui alguns atributos.</p>
+        <p>type - Diz qual o tipo de daos queremos receber, por exemplo texto, número, data e etc.</p>
+        <p>name - Para que o servidor consiga saber onde está cada informação importante que submetemos nós precisamos nomear cada um dos inputs.</p>
+        <p>required - Esse atributo diz ao browser que nós só podemos submeter esse form se esse campo for preenchido (caso tentemos fazer isso o browservai mostrar uma mensagem de erro).</p>
+        <p>Obs: o input que possui o type submit é sempre o botão de submissão do form.</p>
+
+        <h4>Label</h4>
+        <p>A tag label é um texto que geralmente acompanha o input e informa do que se trata aquele campo, ela possui pelo menos um atributo</p>
+        <p>for - Esse atributo aponta para o id do input que aquele label está associado</p>
+        <p></p>
+
         <h3>Anatomia de um documento HTML</h3>
         <pre>
             &lt;!DOCTYPE html&gt;
@@ -110,12 +144,32 @@
         </pre>
 
         <h4>&lt;!DOCTYPE html&gt;</h4>
-        <p>A DOCTYPE precisa ser declarada no inicio de todos as páginas, com ele nós informamos ao browser que o documento é uma página em HTML</p>
+        <p>A DOCTYPE precisa ser declarada no inicio de todos as páginas, com ele nós informamos ao browser que o documento é uma página em HTML.</p>
 
         <h4>&lt;html lang="pt-br"</h4>
         <p>Essa tag engloba todas as outras tags do documento dando unidade a eles.</p>
         <p>Ela tem que está sempre presente e é conhecida como tag root (raiz) do documento.</p>
         <p>O atributo <strong>lang</strong> tem como objetivo informar ao browser a linguagem (portguês no caso) que foi utilizado no documento.</p>
+
+        <h4>&lt;head&gt;</h4>
+        <p>A tag head envolve todas as outras tags que você deseja incluir no documento que não vão ser mostradas ap súmario.</p>
+        <p>Por exemplo uma descrição e um título da página que aparece no google, as fontes que serão baixadas, os estilos e etc.</p>
+
+        <h4>&lt;body&gt;</h4>
+        <p>A tag body envolve todas as tags que serão mostradas no browser como títulos, imagens, links, lista e etc.</p>
+
+        <h3>Meta Tags</h3>
+        <p>São tags que ficam dentro do gead e que não aparecem diretamente na página mas nos ajudam a dar informações sobre ela para o browser e os mecanismo de busca como o Google.</p>
+
+        <h4>&lt;meta charset="UTF-8"&gt;</h4>
+        <p>A tag diz ao browser que vamos usar o padrão de encode UTF-8.</p>
+        <p>UTF-8 é um tipo de codificação binária para representar os caracteres.</p>
+
+        <h4>&lt;meta name="description" "content=""</h4>
+        <p>Essa meta tag informa qual a descrição do conteúdo da página, geralmente ela pe usada pelo Google para mostrar do que a página se trata.</p>
+
+        <h4>&lt;meta name="author" content=""&gt;</h4>
+        <p>Essa tag informa quem é o autor daquela página</p>
     </div>
     
 </body>
