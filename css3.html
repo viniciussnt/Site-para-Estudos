@@ -4,9 +4,218 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS3</title>
 </head>
 <body>
-    
+    <h1>CSS3</h1>
+    <div>
+        <h3>O que é o CSS3?</h3>
+
+        <p>O CSS3 é utilizado para estilizar as telas que desenvolvemos com o HTML5 possivilitando que elas sejam bonitas e funcionais.</p>
+
+        <h3>Onde o CSS3 está presente?</h3>
+
+        <p>Na grande maioria das páginas da web. Inclusive, é bem provável que você nunca tenha visto uma página sem CSS.</p>
+
+        <h3>A sintaxe do CSS3</h3>
+
+        <p>
+            <pre>
+                h1 {
+                    color: blue;
+                    font-size: 12px;
+                }
+            </pre>
+
+            <p>O h1 é o seletor. Seletores nada mais são do que o elemento HTML (ou uma classe a ser aplicar em um elemento HTML).</p>
+
+            <p>O color e o font-size são as propriedades. Elas são atributos do elemento HTML onde será aplicada uma regra.</p>
+
+            <p>O blue e o 12px são valores. Valores é uma característica específica a ser assumida pela porpriedade.</p>
+        </p>
+
+        <h3>Selecionando elementos do HTML para estilizar</h3>
+
+        <p>Podemos selecionar não somente as tags para estilizar mas também as classes e os ids.</p>
+
+        <p>Por tag:
+            <pre>
+                body {
+                    background-color: green;
+                }
+            </pre>
+        </p>
+
+        <p>Por id:
+            <pre>
+                &lt;h1 class="title"&gt; 
+                  Hello &lt;span id='highlight'&gt;World&lt;/span&gt;
+                &lt;/h1&gt;
+
+                #highlight {
+                    font-size: 22px;
+                }
+            </pre>
+        </p>
+
+        <p>Por classe:
+            <pre>
+                &lt;h1 class="title"&gt; 
+                  Hello &lt;span id='highlight'&gt;World&lt;/span&gt;
+                &lt;/h1&gt;
+
+                .title {
+                    color: green;
+                }
+            </pre>
+        </p>
+
+        <h3>Alguns estilos CSS</h3>
+
+        <h4>Color:</h4>
+        <p>
+            color: white<br>
+            color: #efefef
+        </p>
+        <p>Nota: podemos usar o nome das cores ou o código hexadécimal</p>
+
+        <h4>Background-color:</h4>
+        <p>
+            background-color: grey<br>
+            background-color: #efefef
+        </p>
+
+        <h4>Font-size</h4>
+        <p>
+            font-size: 14px <br>
+            font-size: 2cm
+        </p>
+
+        <h3>CSS Box-Model</h3>
+        <p>O box model no CSS é essencialmente uma caixa que envolve todos os elementos HTML.</p>
+        <p>Ele consite em margens, bordas, preenchimento e o conteudo real.</p>
+
+        <p>
+            Exemplo de margin:
+            <pre>
+                h1 {
+                    margin-top: 100px;
+                    margin-right: 100px;
+                    margin-bottom: 150px;
+                    margin-left: 80px;
+                }
+            </pre>
+        </p>
+
+        <p>
+            Exemplo de padding:
+            <pre>
+                h1 {
+                    padding-top: 50px;
+                    padding-right: 30px;
+                    padding-bottom: 50px;
+                    padding-left: 80px;
+                }
+            </pre>
+        </p>
+
+        <h3>Adicionando CSS ao projeto</h3>
+
+        <h4>Inline</h4>
+        <p>O CSS inline é uma forma de estilizar os elementos específicos dentro de um documento HTML.</p>
+        <p>Através do atributo style podemos palicar qualquer estilo CSS a um elemento de uma página.</p>
+        <p>
+            <pre>
+                &lt;h1 style="color: blue;"&gt;Olá, Mundo!&lt;/h1&gt;
+            </pre>
+        </p>
+
+        <p>Atenção: Essa forma é a menos recomendada de se usar CSS para estilizar.</p>
+
+        <h4>Interno</h4>
+        <p>É uma outra forma usada que ao invés de ser usada diretamente na tag, é usada no head fazendo o uso da tag style.</p>
+        <p>
+            <pre>
+                &lt;head&gt;
+                    &lt;style&gt;
+                      body {background-color: powderblue;}
+                      h1 {color: blue;}
+                      p {color: red;}
+                    &lt;/style&gt;
+                  &lt;/head&gt;
+            </pre>
+        </p>
+
+        <h4>Externo</h4>
+        <p>É a forma mais correta usando um arquivo .css externo</p>
+        <p>
+            <pre>
+                index.html
+                &lt;head&gt;
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                  &lt;/head&gt;
+
+                  style.css
+                  body {
+                  background-color: powderblue;
+                  }
+                  h1 {
+                  color: blue;
+                  }
+                  p {
+                  color: red;
+                  }
+            </pre>
+        </p>
+
+        <h3>Pseudo Classes</h3>
+        <p>Uma pseudo-classe é usada para definir um estado especial de um elemento</p>
+        <p>Por exemplo, ela pode ser usada para:</p>
+        <p>Estilizar um elemento qunado o usuário passar o mouse sobre ele.
+            <pre>
+                a:hover {
+                    color: #ff00ff;
+                }
+            </pre>
+        </p>
+        <p>Estilizar os links visitados e não visitados de maneira diferente
+            <pre>
+                a:visited {
+                    color: #00ff00;
+                }
+            </pre>
+        </p>
+        <p>Estilizar um elemento quando receber foco
+            <pre>
+                a:active {
+                    color: #0000ff;
+                }
+            </pre>
+        </p>
+
+        <h3>Variáveis em CSS</h3>
+        <p>As variáveis CSS são entidades definidas por desenvolvedores, contendo valores espcíficos para serem reutilizdos ao longo do projeto.</p>
+        <p>Sáo configurads usando esta notação
+            <pre>
+                --cor-principal: black;
+            </pre>
+        </p>
+        <p>São acessadas usando a função var().
+            <pre>
+                color: var(--cor-principal);
+            </pre>
+        </p>
+
+        <p>Exemplo prático
+            <pre>
+                :root {
+                    --main-bg-color: brown;
+                  }
+                  
+                  div {
+                    background-color: var(--main-bg-color);
+            </pre>
+        </p>
+    </div>
 </body>
 </html>
